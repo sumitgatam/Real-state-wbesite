@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EstatePrime - Luxury Real Estate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="header-container">
+            <a href="#" class="logo">Estate<span>Prime</span></a>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#properties">Properties</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="animate-fade-up">Find Your <span>Dream Home</span></h1>
+            <p class="hero-tagline animate-fade-up" style="animation-delay: 0.2s;">Discover exceptional properties in prime locations</p>
+            
+            <!-- Search Bar -->
+            <div class="search-container animate-fade-up" style="animation-delay: 0.4s;">
+                <div class="search-box">
+                    <div class="search-field">
+                        <label>Location</label>
+                        <select id="search-location">
+                            <option value="">Select Location</option>
+                            <option value="beverly-hills">Beverly Hills, CA</option>
+                            <option value="manhattan">Manhattan, NY</option>
+                            <option value="miami">Miami, FL</option>
+                            <option value="aspen">Aspen, CO</option>
+                            <option value="san-francisco">San Francisco, CA</option>
+                        </select>
+                    </div>
+                    <div class="search-divider"></div>
+                    <div class="search-field">
+                        <label>Property Type</label>
+                        <select id="search-type">
+                            <option value="">All Types</option>
+                            <option value="house">House</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="villa">Villa</option>
+                            <option value="penthouse">Penthouse</option>
+                        </select>
+                    </div>
+                    <div class="search-divider"></div>
+                    <div class="search-field">
+                        <label>Price Range</label>
+                        <select id="search-price">
+                            <option value="">Any Price</option>
+                            <option value="0-500000">$0 - $500K</option>
+                            <option value="500000-1000000">$500K - $1M</option>
+                            <option value="1000000-3000000">$1M - $3M</option>
+                            <option value="3000000+">$3M+</option>
+                        </select>
+                    </div>
+                    <button class="search-btn" id="search-btn">Search</button>
+                </div>
+            </div>
+            
+            <div class="hero-stats animate-fade-up" style="animation-delay: 0.6s;">
+                <div class="stat">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Properties</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">200+</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Expert Agents</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images">
+                    <div class="about-image-main">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80" alt="Luxury home">
+                    </div>
+                    <div class="about-image-secondary">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80" alt="Modern interior">
+                    </div>
+                    <div class="about-experience-badge">
+                        <span class="experience-years">25</span>
+                        <span class="experience-text">Years<br>Experience</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-label">About Us</span>
+                    <h2 class="section-title">Excellence in Real Estate <span>Since 1999</span></h2>
+                    <p class="about-text">At EstatePrime, we believe that finding your perfect home is more than just a transaction—it's about discovering a lifestyle that complements your aspirations. With over two decades of experience in the luxury real estate market, we've built our reputation on integrity, expertise, and an unwavering commitment to our clients.</p>
+                    <p class="about-text">Our team of dedicated professionals brings together diverse backgrounds and specialized knowledge to guide you through every step of your real estate journey. Whether you're buying, selling, or investing, we provide personalized solutions tailored to your unique needs.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">✓</div>
+                            <span>Premium Properties</span>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">✓</div>
+                            <span>Expert Guidance</span>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">✓</div>
+                            <span>Transparent Process</span>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">✓</div>
+                            <span>24/7 Support</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="cta-btn">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties Section -->
+    <section class="properties" id="properties">
+        <div class="container">
+            <span class="section-label">Featured Listings</span>
+            <h2 class="section-title">Discover Our <span>Premium Properties</span></h2>
+            <p class="section-subtitle">Handpicked selections from the finest real estate portfolio</p>
+            
+            <div class="properties-grid" id="properties-grid">
+                <!-- Property cards will be inserted by JavaScript -->
+            </div>
+            
+            <div class="properties-cta">
+                <a href="#contact" class="view-all-btn">View All Properties</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <span class="section-label">What We Offer</span>
+            <h2 class="section-title">Our <span>Professional Services</span></h2>
+            <p class="section-subtitle">Comprehensive real estate solutions for every need</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Property Buying</h3>
+                    <p>Find your dream home with our extensive portfolio of premium properties. We guide you through every step.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3>Property Selling</h3>
+                    <p>Maximize your property's value with our strategic marketing approach and expert valuation services.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                            <line x1="1" y1="10" x2="23" y2="10"></line>
+                        </svg>
+                    </div>
+                    <h3>Property Financing</h3>
+                    <p>Navigate the mortgage process with ease. We connect you with trusted lenders for competitive rates.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                    <h3>Property Management</h3>
+                    <p>Comprehensive management services for rental properties. We handle everything from tenant screening to maintenance.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <h3>Investment Advisory</h3>
+                    <p>Make informed investment decisions with our expert market analysis and portfolio diversification strategies.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                    </div>
+                    <h3>Global Reach</h3>
+                    <p>Access international properties and markets. Our network spans across major real estate hubs worldwide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <span class="section-label">Client Reviews</span>
+            <h2 class="section-title">What Our <span>Clients Say</span></h2>
+            <p class="section-subtitle">Hear from our satisfied clients about their experience</p>
+            
+            <div class="testimonials-slider" id="testimonials-slider">
+                <div class="testimonials-track" id="testimonials-track">
+                    <!-- Testimonial cards will be inserted by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="testimonials-dots" id="testimonials-dots">
+                <!-- Dots will be inserted by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-label">Get In Touch</span>
+                    <h2 class="section-title">Let's Find Your <span>Dream Home</span></h2>
+                    <p class="contact-text">Ready to start your real estate journey? Contact us today for a free consultation. Our team is here to help you every step of the way.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h4>Address</h4>
+                                <p>123 Luxury Lane, Beverly Hills, CA 90210</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+1 (310) 555-0123</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@estateprime.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🕐</div>
+                            <div>
+                                <h4>Working Hours</h4>
+                                <p>Mon - Sat: 9:00 AM - 7:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">FB</a>
+                        <a href="#" class="social-link" aria-label="Instagram">IG</a>
+                        <a href="#" class="social-link" aria-label="Twitter">TW</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">LI</a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contact-form">
+                        <h3>Send us a Message</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Enter your phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="interest">I'm Interested In</label>
+                                <select id="interest" name="interest">
+                                    <option value="">Select interest</option>
+                                    <option value="buying">Buying a Property</option>
+                                    <option value="selling">Selling a Property</option>
+                                    <option value="renting">Renting</option>
+                                    <option value="investment">Investment</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your requirements..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                        <div class="form-message" id="form-message"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="#" class="logo">Estate<span>Prime</span></a>
+                        <p>Your trusted partner in luxury real estate. We help you find not just a house, but a home that reflects your lifestyle and aspirations.</p>
+                        <div class="footer-social">
+                            <a href="#">FB</a>
+                            <a href="#">IG</a>
+                            <a href="#">TW</a>
+                            <a href="#">LI</a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#properties">Properties</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h4>Properties</h4>
+                        <ul>
+                            <li><a href="#">Houses</a></li>
+                            <li><a href="#">Apartments</a></li>
+                            <li><a href="#">Villas</a></li>
+                            <li><a href="#">Penthouses</a></li>
+                            <li><a href="#">Commercial</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-newsletter">
+                        <h4>Newsletter</h4>
+                        <p>Subscribe to get the latest property updates and exclusive offers.</p>
+                        <form class="newsletter-form" id="newsletter-form">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 EstatePrime. All rights reserved. | Crafted with passion</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
